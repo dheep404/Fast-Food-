@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <h1>Welcome to The Bistro</h1>
+
+    <form method="POST" action="/PlaceOrder">
+      <table class="placeOrderTable">
+        <tr>
+          <td><label for="tbl">Table Number</label></td>
+          <td>
+            <input
+              id="tbl"
+              type="number"
+              min="1"
+              max="40"
+              name="tableNumber"
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="bgr">Burger &amp; chips</label></td>
+          <td>
+            <input
+              type="number"
+              min="1"
+              max="10"
+              id="bgr"
+              name="BurgerMeal"
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="fsh">Fish &amp; chips</label></td>
+          <td>
+            <input
+              type="number"
+              min="1"
+              max="10"
+              id="fsh"
+              name="FishMeal"
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="las">Lasagne</label></td>
+          <td>
+            <input
+              type="number"
+              min="1"
+              max="10"
+              id="las"
+              name="Lasagne"
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="brs">Beers</label></td>
+          <td>
+            <input type="number" min="1" max="10" id="brs" name="Beers" /><br />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="cks">Cokes</label></td>
+          <td>
+            <input type="number" min="1" max="10" id="cks" name="Cokes" /><br />
+          </td>
+        </tr>
+      </table>
+      <br />
+
+      <div class="ordersDiv">
+        <input id="submitButton" type="submit" value="Place Order" />
+      </div>
+    </form>
+  </body>
+</lang=>
